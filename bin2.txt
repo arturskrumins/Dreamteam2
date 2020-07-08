@@ -1,0 +1,10 @@
+#! /bin/bash
+
+echo "Ievadi veselus skaitlus"
+read a
+
+
+O=({0..1}{0..1}{0..1}{0..1}{0..1}{0..1}{0..1}{0..1}{0..1}{0..1}) # Var nolasit lidz 10 binaram opcijam
+
+echo $((10#${O[$a]}))  "Tads ir binars skaitlis" # Nodzes nevajadzgos skaitlus 
+
